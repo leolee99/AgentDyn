@@ -1,8 +1,8 @@
-# AgentDyn<center>
+## AgentDyn: A Dynamic Open-Ended Benchmark for Evaluating Prompt Injection Attacks of Real-World Agent Security System
 
-# AgentDyn: A Dynamic Open-Ended Benchmark for Evaluating Prompt Injection Attacks  of  Real-World Agent Security System
+[Hao Li](https://leolee99.github.io/), [Ruoyao Wen](https://github.com/ruoyaow/), [Shanghao Shi](https://shishishi123.github.io/), [Ning Zhang](https://cybersecurity.seas.wustl.edu/index.html), [Chaowei Xiao](https://xiaocw11.github.io/).
 
-AgentDyn is a dyanmic open-ended agent security benchmark built on top of the AgentDojo framework.
+AgentDyn is a dyanmic open-ended agent security benchmark built on top of the [AgentDojo](https://github.com/ethz-spylab/agentdojo) framework. Appreciate their respected contirbution to the community.
 
 ## Quickstart
 
@@ -29,11 +29,16 @@ Before running, please export your API key, through:
 2. Google Model: export GOOGLE_API_KEY=XXX
 3. Open-sourced Models (Qwen, LlaMA): export OPENROUTER_API_KEY=XXX
 
-**Avaliable Suites:** AgentDyn supports `shopping`,`github`, and `dailylife` suites.
+## Supported settings
 
-**Avaliable Models:** We evaluate the following models in our paper: ``GPT_4O_MINI_2024_07_18``, ``GPT_4O_2024_08_06``, ``GEMINI_2_5_FLASH``, ``GEMINI_2_5_PRO``, ``LLAMA_3_3_70B``, ``QWEN3_235B``, ``GPT_5_1_2025_11_13``, ``GPT_5_MINI_2025_08_07``.
+#### Avaliable Suites:
+AgentDyn supports `shopping`,`github`, and `dailylife` suites.
 
-**Avaliable Defenses:** We support the following defenses in our paper: ``repeat_user_prompt``, ``spotlighting_with_delimiting``, ``tool_filter``, ``transformers_pi_detector``, ``piguard_detector``, ``prompt_guard_2_detector``.
+#### Avaliable Models: 
+We evaluate the following models in our paper: ``GPT_4O_MINI_2024_07_18``, ``GPT_4O_2024_08_06``, ``GEMINI_2_5_FLASH``, ``GEMINI_2_5_PRO``, ``LLAMA_3_3_70B``, ``QWEN3_235B``, ``GPT_5_1_2025_11_13``, ``GPT_5_MINI_2025_08_07``.
+
+#### Avaliable Defenses: 
+We support the following defenses in our paper: ``repeat_user_prompt``, ``spotlighting_with_delimiting``, ``tool_filter``, ``transformers_pi_detector``, ``piguard_detector``, ``prompt_guard_2_detector``.
 
 ## Inspect Results
 
@@ -51,3 +56,4 @@ If you find this work useful in your research or applications, we appreciate tha
   eprint = {2601.10173},
   year={2026}
 }
+```
