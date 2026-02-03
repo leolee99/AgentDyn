@@ -2,7 +2,7 @@
 
 [Hao Li](https://leolee99.github.io/), [Ruoyao Wen](https://github.com/ruoyaow/), [Shanghao Shi](https://shishishi123.github.io/), [Ning Zhang](https://cybersecurity.seas.wustl.edu/index.html), [Chaowei Xiao](https://xiaocw11.github.io/).
 
-AgentDyn is a dyanmic open-ended agent security benchmark built on top of the [AgentDojo](https://github.com/ethz-spylab/agentdojo) framework. Appreciate their respected contirbution to the community.
+AgentDyn is a dynamic, open-ended agent security benchmark featuring 60 challenging open-ended user tasks and 560 injection test cases across the Shopping, GitHub, and Daily Life scenarios. It is built on top of the [AgentDojo](https://github.com/ethz-spylab/agentdojo) framework. A huge thanks to the AgentDojo team for their admirable contribution to the community!
 
 ## Quickstart
 
@@ -32,13 +32,14 @@ Before running, please export your API key, through:
 ## Supported settings
 
 #### Avaliable Suites:
-AgentDyn supports `shopping`,`github`, and `dailylife` suites.
+AgentDyn supports `shopping`,`github`, and `dailylife` suites, as well as the original four suites from AgentDojo (`banking`,`slack`, `travel` and `workspace`).
 
 #### Avaliable Models: 
-We evaluate the following models in our paper: ``GPT_4O_MINI_2024_07_18``, ``GPT_4O_2024_08_06``, ``GEMINI_2_5_FLASH``, ``GEMINI_2_5_PRO``, ``LLAMA_3_3_70B``, ``QWEN3_235B``, ``GPT_5_1_2025_11_13``, ``GPT_5_MINI_2025_08_07``.
+We evaluate the following models in our paper: ``GPT_4O_MINI_2024_07_18``, ``GPT_4O_2024_08_06``, ``GEMINI_2_5_FLASH``, ``GEMINI_2_5_PRO``, ``LLAMA_3_3_70B``, ``QWEN3_235B``, ``GPT_5_1_2025_11_13``, ``GPT_5_MINI_2025_08_07``. 
+Other models supported by AgentDojo are also compatible.
 
 #### Avaliable Defenses: 
-We support the following defenses in our paper: ``repeat_user_prompt``, ``spotlighting_with_delimiting``, ``tool_filter``, ``transformers_pi_detector``, ``piguard_detector``, ``prompt_guard_2_detector``.
+In addition to the original defenses in AgentDojo, we provide support for [PIGuard](https://aclanthology.org/2025.acl-long.1468.pdf) and [PromptGuard2](https://huggingface.co/meta-llama/Llama-Prompt-Guard-2-86M). The complete list of defenses supported in our paper includes: ``repeat_user_prompt``, ``spotlighting_with_delimiting``, ``tool_filter``, ``transformers_pi_detector``, ``piguard_detector``, ``prompt_guard_2_detector``.
 
 ## Inspect Results
 
