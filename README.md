@@ -13,7 +13,7 @@ pip install -e .
 
 ## Running the benchmark
 
-For adaptability, we support an evaluation script similar to AgentDojo's. Documentation on how to use the script can be obtained with the `--help` flag.
+For adaptability, we support an evaluation script same as AgentDojo's. Documentation on how to use the script can be obtained with the `--help` flag.
 
 For example, to run the `shopping` suite , with `gpt-4o-2024-08-06` as the LLM, the tool filter as a defense, and the attack with important_instructions, run the following command:
 
@@ -33,8 +33,21 @@ Before running, please export your API key, through:
 
 **Avaliable Models:** We evaluate the following models in our paper: ``GPT_4O_MINI_2024_07_18``, ``GPT_4O_2024_08_06``, ``GEMINI_2_5_FLASH``, ``GEMINI_2_5_PRO``, ``LLAMA_3_3_70B``, ``QWEN3_235B``, ``GPT_5_1_2025_11_13``, ``GPT_5_MINI_2025_08_07``.
 
-
+**Avaliable Defenses:** We support the following defenses in our paper: ``repeat_user_prompt``, ``spotlighting_with_delimiting``, ``tool_filter``, ``transformers_pi_detector``, ``piguard_detector``, ``prompt_guard_2_detector``.
 
 ## Inspect Results
 
 To review the results reported in our paper, please refer to the log files in the ``(runs/)``.
+
+## References
+
+If you find this work useful in your research or applications, we appreciate that if you can kindly cite:
+
+```
+@articles{AgentDyn,
+  title={AgentDyn: A Dynamic Open-Ended Benchmark for Evaluating Prompt Injection Attacks of Real-World Agent Security System},
+  author={Hao Li and Ruoyao Wen and Shanghao Shi and Ning Zhang and Chaowei Xiao},
+  journal = {arXiv},
+  eprint = {2601.10173},
+  year={2026}
+}
