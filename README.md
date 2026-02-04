@@ -2,6 +2,8 @@
 
 [Hao Li](https://leolee99.github.io/), [Ruoyao Wen](https://github.com/ruoyaow/), [Shanghao Shi](https://shishishi123.github.io/), [Ning Zhang](https://cybersecurity.seas.wustl.edu/index.html), [Chaowei Xiao](https://xiaocw11.github.io/).
 
+The official implementation of the paper "[AgentDyn: A Dynamic Open-Ended Benchmark for Evaluating Prompt Injection Attacks of Real-World Agent Security System](https://arxiv.org/pdf/2602.03117)".
+
 AgentDyn is a dynamic, open-ended agent security benchmark featuring 60 challenging open-ended user tasks and 560 injection test cases across the Shopping, GitHub, and Daily Life scenarios. It is built on top of the [AgentDojo](https://github.com/ethz-spylab/agentdojo) framework. A huge thanks to the AgentDojo team for their admirable contribution to the community!
 
 ## Quickstart
@@ -54,7 +56,7 @@ If you find this work useful in your research or applications, we appreciate tha
   title={AgentDyn: A Dynamic Open-Ended Benchmark for Evaluating Prompt Injection Attacks of Real-World Agent Security System},
   author={Hao Li and Ruoyao Wen and Shanghao Shi and Ning Zhang and Chaowei Xiao},
   journal = {arXiv},
-  eprint = {2601.10173},
+  eprint = {2602.03117},
   year={2026}
 }
 ```
