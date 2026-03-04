@@ -177,7 +177,7 @@ def chat_completion_request(
         tools=tools or NOT_GIVEN,
         tool_choice="auto" if tools else NOT_GIVEN,
         temperature=temperature if temperature is not None else NOT_GIVEN,
-        reasoning_effort=reasoning_effort or NOT_GIVEN,
+        reasoning_effort=reasoning_effort if reasoning_effort is not None else NOT_GIVEN,
     )
 
 
@@ -245,7 +245,7 @@ class OpenAILLMToolFilter(BasePipelineElement):
             tools=openai_tools or NOT_GIVEN,
             tool_choice="none",
             temperature=self.temperature if self.temperature is not None else NOT_GIVEN,
-            reasoning_effort=self.reasoning_effort or NOT_GIVEN,
+            reasoning_effort=self.reasoning_effort if self.reasoning_effort is not None else NOT_GIVEN,
         )
         output = _openai_to_assistant_message(completion.choices[0].message)
 
